@@ -7,73 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>沖縄初の「真のナポリピッツァ協会」認定店！| PIZZERIA ONDA</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-
     <link rel="stylesheet" href="css/reset.css">
-
-    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-    <!-- メニュー　スライド　→slick―sliderのlinkタグは２つ入れる！！ -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
-    <!-- ギャラリー　ライトボックス -->
     <link rel="stylesheet" href="css/lightbox.css">
-
-    <!-- 自分で作成したCSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- fontawesome　の親データ -->
     <script src="https://kit.fontawesome.com/179cfe141f.js" crossorigin="anonymous"></script>
-
-    <!-- JQをいれるための親データ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- ギャラリー　ライトボックス -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
         type="text/javascript"></script>
-
-    <!-- ↓　メイン画像のスライドショー -->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script>
         $(function () {
             $('.bxslider').bxSlider({
-                auto: true, // 自動でスライドショーをスタートさせる　（初期値: false）
-                mode: 'horizontal', // アニメーションの種類「横スライド→'horizontal'」「上へスライド→'vertical'」「消えていく→'fade'」　（初期値: 'horizontal'）
-                speed: 500, // アニメーションのスピード　（初期値: 500）
-                pause: 4000, // 画像の切り替わる間隔　（初期値: 4000）
-                pager: false, // 下部にある画像切り替えボタンの表示・非表示　（初期値: true）
-                controls: false // 左右の矢印の表示・非表示　（初期値: true：オン）
+                auto: true,
+                mode: 'horizontal',
+                speed: 500,
+                pause: 4000,
+                pager: false,
+                controls: false
             });
         });
     </script>
-
-
-    <!-- ↓　メニューのスライドショー　slick―slider -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
 
         $(function () {
             // メイン画像のオプション
             $(".slider").slick({
-                autoplay: true, // 自動再生ON
-                arrows: false, // 矢印ON true 矢印非表示 false
-                asNavFor: ".thumbnail", // サムネイルと同期
+                autoplay: true,
+                arrows: false,
+                asNavFor: ".thumbnail",
             });
             // サムネイルのオプション
             $(".thumbnail").slick({
-                slidesToShow: 4, // サムネイルの表示数
-                asNavFor: ".slider", // メイン画像と同期
-                focusOnSelect: true, // サムネイルクリックを有効化
+                slidesToShow: 4,
+                asNavFor: ".slider",
+                focusOnSelect: true,
             });
         });
     </script>
-
-
-
 </head>
 
 <body id="home">
@@ -83,11 +59,11 @@
                 <img src="images/onda logo.svg" alt="ピザ屋のオンダ">
             </a>
             <ul>
-                <li class="section-hover"><a href="/">HOME</a></li>
+                <li class="section-hover"><a href="index.html">HOME</a></li>
                 <li class="section-hover"><a href="menu.html">MENU</a></li>
-                <li class="section-hover"><a href="/">GALLERY</a></li>
-                <li class="section-hover"><a href="/">NEWS</a></li>
-                <li class="section-hover"><a href="/">ACCESS</a></li>
+                <li class="section-hover"><a href="">GALLERY</a></li>
+                <li class="section-hover"><a href="">NEWS</a></li>
+                <li class="section-hover"><a href="info.html">ACCESS</a></li>
                 <li class="section-hover"><a href="info.html">SHOP INFO</a></li>
 
                 <div class="nav-icon">
@@ -103,24 +79,18 @@
 
     <main id="home">
         <div class="main-image">
-
             <div class="bxslider">
                 <div><img src="images/main-slid-1.jpg"></div>
                 <div><img src="images/main-slid-2.jpg"></div>
-                <!-- <div><img src="images/pic3.jpg"></div>
-                <div><img src="images/pic4.jpg"></div> -->
             </div>
             <img src="images/onda-title.png" alt="" class="shopname">
         </div>
 
         <div class="inner">
-
             <div class="main-about">
                 <h1>―　About　―</h1>
                 <p class="bigtext">w</p>
-
                 <div class="main-about-beside">
-
                     <div class="about-images">
                         <div class="about-left">
                             <img src="images/main-about-image1.jpg" alt="" width="430">
@@ -129,7 +99,6 @@
                             <img src="images/main-about-image2.jpg" alt="" width="320">
                         </div>
                     </div>
-
 
                     <div class="about-text">
                         <span class="cont_dt-n">
@@ -150,9 +119,6 @@
                 </div>
             </div>
         </div>
-
-
-
 
         <div class="main-onda">
             <h1>―　ONDA　―</h1>
@@ -182,7 +148,6 @@
                 <p>彩り豊かなフルーツのサングリアやスペインワインとともに、スペシャリテのスフレトルティージャ、パエリヤ、<br>
                     自慢のタパスやピンチョス、コース料理と様々にお愉しみいただけます。<br>
                     ランチタイムからディナー、食後の一杯まで、新しい渋谷の食と空間で、お客様をおもてなしいたします。</p>
-
 
                 <div class="container">
                     <div class="slider">
@@ -351,8 +316,6 @@
                             <a href="">10月8日より営業再開と10月31日までの期間の営業時間について</a>
                         </li>
                         <li>
-                            <!-- liにflexいれる。もしかしたら、tameタグとa
-                    タグに幅サイズを入れたほうが良いかも -->
                             <time datetime="2021-09-12">2021.09.12</time>
                             <a href="">沖縄県新型コロナウイルスの緊急事態宣言<br>
                                 飲食店への休業要請延長に従い、9月30日までお休みを延長</a>
@@ -378,7 +341,6 @@
         </div>
     </main>
 
-
     <footer>
         <div class="inner">
             <div class="footer-yoko">
@@ -402,10 +364,10 @@
             </div>
             <div class="lastlink">
                 <p>
-                    <a href="/">HOME</a>
+                    <a href="index.html">HOME</a>
                 </p>
                 <p>
-                    <a href="">MENU</a>
+                    <a href="menu.html">MENU</a>
                 </p>
                 <p>
                     <a href="">GALLERY</a>

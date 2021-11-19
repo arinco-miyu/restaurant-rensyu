@@ -7,47 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOP INFO | PIZZERIA ONDA</title>
     <link rel="stylesheet" href="css/reset.css">
-
-    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-    <!-- メニュー　スライド　→slick―sliderのlinkタグは２つ入れる！！ -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
-    <!-- ギャラリー　ライトボックス -->
     <link rel="stylesheet" href="css/lightbox.css">
-
-    <!-- 自分で作成したCSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- fontawesome　の親データ -->
     <script src="https://kit.fontawesome.com/179cfe141f.js" crossorigin="anonymous"></script>
-
-    <!-- JQをいれるための親データ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- ギャラリー　ライトボックス -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
         type="text/javascript"></script>
-
-    <!-- ↓　メイン画像のスライドショー -->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script>
         $(function () {
             $('.bxslider').bxSlider({
-                auto: true, // 自動でスライドショーをスタートさせる　（初期値: false）
-                mode: 'horizontal', // アニメーションの種類「横スライド→'horizontal'」「上へスライド→'vertical'」「消えていく→'fade'」　（初期値: 'horizontal'）
-                speed: 500, // アニメーションのスピード　（初期値: 500）
-                pause: 4000, // 画像の切り替わる間隔　（初期値: 4000）
-                pager: false, // 下部にある画像切り替えボタンの表示・非表示　（初期値: true）
-                controls: false // 左右の矢印の表示・非表示　（初期値: true：オン）
+                auto: true,
+                mode: 'horizontal',
+                speed: 500,
+                pause: 4000,
+                pager: false,
+                controls: false
             });
         });
     </script>
-
 
     <!-- ↓　メニューのスライドショー　slick―slider -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -56,20 +39,18 @@
         $(function () {
             // メイン画像のオプション
             $(".slider").slick({
-                autoplay: true, // 自動再生ON
-                arrows: false, // 矢印ON true 矢印非表示 false
-                asNavFor: ".thumbnail", // サムネイルと同期
+                autoplay: true,
+                arrows: false,
+                asNavFor: ".thumbnail",
             });
             // サムネイルのオプション
             $(".thumbnail").slick({
-                slidesToShow: 4, // サムネイルの表示数
-                asNavFor: ".slider", // メイン画像と同期
-                focusOnSelect: true, // サムネイルクリックを有効化
+                slidesToShow: 4,
+                asNavFor: ".slider",
+                focusOnSelect: true,
             });
         });
     </script>
-
-
 
 </head>
 
@@ -80,11 +61,11 @@
                 <img src="images/onda logo.svg" alt="ピザ屋のオンダ">
             </a>
             <ul>
-                <li class="section-hover"><a href="/">HOME</a></li>
+                <li class="section-hover"><a href="index.html">HOME</a></li>
                 <li class="section-hover"><a href="menu.html">MENU</a></li>
-                <li class="section-hover"><a href="/">GALLERY</a></li>
-                <li class="section-hover"><a href="/">NEWS</a></li>
-                <li class="section-hover"><a href="/">ACCESS</a></li>
+                <li class="section-hover"><a href="">GALLERY</a></li>
+                <li class="section-hover"><a href="">NEWS</a></li>
+                <li class="section-hover"><a href="info.html">ACCESS</a></li>
                 <li class="section-hover"><a href="info.html">SHOP INFO</a></li>
 
                 <div class="nav-icon">
@@ -93,7 +74,6 @@
                     <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
                 </div>
             </ul>
-
         </nav>
     </header>
 
@@ -191,7 +171,6 @@
         </div>
     </main>
 
-
     <footer>
         <div class="inner">
             <div class="footer-yoko">
@@ -215,7 +194,7 @@
             </div>
             <div class="lastlink">
                 <p>
-                    <a href="/">HOME</a>
+                    <a href="index.html">HOME</a>
                 </p>
                 <p>
                     <a href="menu.html">MENU</a>
