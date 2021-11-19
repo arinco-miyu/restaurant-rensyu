@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU | PIZZERIA ONDA</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- メニュー　スライド　→slick―sliderのlinkタグは２つ入れる！！ -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- ギャラリー　ライトボックス -->
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <!-- 自分で作成したCSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome　の親データ -->
+    <script src="https://kit.fontawesome.com/179cfe141f.js" crossorigin="anonymous"></script>
+
+    <!-- JQをいれるための親データ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- ギャラリー　ライトボックス -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+        type="text/javascript"></script>
+
+    <!-- ↓　メイン画像のスライドショー -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                auto: true, // 自動でスライドショーをスタートさせる　（初期値: false）
+                mode: 'horizontal', // アニメーションの種類「横スライド→'horizontal'」「上へスライド→'vertical'」「消えていく→'fade'」　（初期値: 'horizontal'）
+                speed: 500, // アニメーションのスピード　（初期値: 500）
+                pause: 4000, // 画像の切り替わる間隔　（初期値: 4000）
+                pager: false, // 下部にある画像切り替えボタンの表示・非表示　（初期値: true）
+                controls: false // 左右の矢印の表示・非表示　（初期値: true：オン）
+            });
+        });
+    </script>
+
+
+    <!-- ↓　メニューのスライドショー　slick―slider -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+
+        $(function () {
+            // メイン画像のオプション
+            $(".slider").slick({
+                autoplay: true, // 自動再生ON
+                arrows: false, // 矢印ON true 矢印非表示 false
+                asNavFor: ".thumbnail", // サムネイルと同期
+            });
+            // サムネイルのオプション
+            $(".thumbnail").slick({
+                slidesToShow: 4, // サムネイルの表示数
+                asNavFor: ".slider", // メイン画像と同期
+                focusOnSelect: true, // サムネイルクリックを有効化
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body id="menu">
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="images/onda logo.svg" alt="ピザ屋のオンダ">
+            </a>
+            <ul>
+                <li class="section-hover"><a href="/">HOME</a></li>
+                <li class="section-hover"><a href="menu.html">MENU</a></li>
+                <li class="section-hover"><a href="/">GALLERY</a></li>
+                <li class="section-hover"><a href="/">NEWS</a></li>
+                <li class="section-hover"><a href="/">ACCESS</a></li>
+                <li class="section-hover"><a href="info.html">SHOP INFO</a></li>
+
+                <div class="nav-icon">
+                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="menu-main-image menu-top-title">
+            <img src="images/menu-main-image.jpg" alt="">
+            <p>MENU</p>
+        </div>
+        <div class="menu-main-image menu-main">
+            <img src="images/menu-second-image.jpg" alt="">
+            <div class="menu-second-text">
+                <h1>美味しさいろいろ</h1>
+                <h2>自慢のメニュー</h2>
+                <p>自慢のメニューピザやパスタは当店を代表する自慢のメニューですが、ワインと好相性の一品料理はもちろん、コース料理やパーティ料理などもご提供しております。おすすめは、前菜と肉料理に自家製ピザもしくはパスタが選べて、デザートまで付いたカジュアルなディナーセット。
+                    <br><br>
+                    お手頃なお値段で美味しいイタリアンを満喫できるとあって、平日のお仕事帰りや休日のお買い物帰りなどにご好評いただいております。
+                    <br>
+                    また、多彩な美味と合わせることで、互いを引き立て合うワインも充実。
+                    料理とワインのハーモニーで、楽しいひと時をお過ごしください。
+                </p>
+            </div>
+        </div>
+
+        <div class="inner">
+            <!-- 食材 -->
+            <div class="menu-shokuzai">
+                <div class="shokuzai-left">
+                    <h1>―　食材　―</h1>
+                    <p>当店ではモッツァレラチーズ・小麦・トマトソース・塩<br>
+                        全てイタリアの食材を使用しております。
+                        <br>
+                        <br>
+                        モッツァレラチーズはイタリアより新鮮な物が送られてきます。
+                        <br>
+                        <br>
+                        ナポリピッツァの命とも言われる生地に使用している原材料は<br>
+                        本場ナポリと同じく小麦・塩・酵母・水のみ。
+                        <br>
+                        <br>
+                        余分な物は一切使っておりません。<br>
+                        この生地に旨みなしではナポリピッツァは語れません。
+                    </p>
+                </div>
+
+                <div class="shokuzai-right">
+                    <div class="shokuzai-img-l">
+                        <img src="images/shokuzai-second.jpg" alt="">
+                    </div>
+                    <div class="shokuzai-img-r">
+                        <img src="images/shokuzai-top.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 新窯 -->
+            <div class="menu-kama">
+                <img src="images/menu-shinkama.jpg" alt="">
+                <div class="kama-right">
+                    <h1>―　新窯　―</h1>
+                    <p>窯はイタリア『ステファノフェラーラ社』の窯を使用。<br><br>
+
+                        窯の温度は４５０℃から５００℃まで上がり、<br>
+                        一瞬のうちにおいしく焼き上げることができます。
+                        <br><br>
+                        表面はパリッと、中はモチモチとした食感で<br>
+                        薪の香ばしさをお楽しみください。
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- food -->
+            <!-- 前菜 -->
+            <div class="zensai">
+                <div class="zensai-img">
+                    <img src="images/food-ribbon.png" alt="" class="zensai-top-left">
+                    <img src="images/menu-zensai.jpg" alt="" class="zensai-top-right">
+                </div>
+
+                <div class="zensai-text">
+                    <div class="zensai-title">
+                        <h1>Antipasti</h1>
+                        <h2>――　前菜メニュー 一例　――</h2>
+                    </div>
+                    <div class="zensai-text-yoko">
+                        <div class="ryokin">
+                            <ul class="tab-reager">
+                                <li>
+                                    <span class="tab-reader-box1">前菜の盛り合わせ　2名様～</span>
+                                    <span class="tab-reader-box2"></span>
+                                    <span class="tab-reader-box3"></span>
+                                </li>
+                                <li>
+                                    <span class="tab-reader-box1">シチリア産グリーンオリーブ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">400 円</span>
+                                </li>
+                                <li>
+                                    <span class="tab-reader-box1">自家製ピクルス</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">400 円</span>
+                                </li>
+                                <li>
+                                    <span class="tab-reader-box1">手作り県産ドライトマトのオイル漬け</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">400 円</span>
+                                </li>
+                                <li>
+                                    <span class="tab-reader-box1">じゃが芋のロースト</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">600 円</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ryokin">
+                            <ul class="tab-reader">
+                                <li class="menu-flex">
+                                    <span class="tab-reader-box1">赤エビの薪窯焼き（3尾)</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">780 円</span>
+                                </li>
+                                <li>
+                                    <span class="tab-reader-box1">沖縄県産/黒皮カジキの燻製　カルパッチョ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">800 円</span>
+                                </li>
+                                <li>
+                                    <span class="tab-reader-box1">牛モツと白いんげん豆の煮込み（トリッパ）</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">980 円</span>
+                                </li>
+                                <li class="Caprese">
+                                    <span class="tab-reader-box1">カプレーゼ <br>
+
+                                    </span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">1,300 円</span>
+                                <li class="guzai">
+                                    <p>(水牛モッツァレラチーズとミニトマトのサラダ)</p>
+                                </li>
+
+                                </li>
+                                <!-- <li> <span class="tab-reader-box1"></span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3"></span>
+                                </li>
+                                <li class="guzai">
+                                    <p></p>
+                                </li> -->
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- メインディッシュ -->
+            <div class="maindish">
+                <img src="images/menu-maindish.jpg" alt="">
+                <div class="maindish-text">
+                    <div class="maindish-title">
+                        <h1>Secondi Piatti</h1>
+                        <h2>―　メイン 一例　―</h2>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <span class="tab-reader-box1">仔羊のシチリア風香草トマト煮込み</span>
+                                <span class="tab-reader-box2">
+                                    <hr class="tab-r-line">
+                                </span>
+                                <span class="tab-reader-box3">1,780 円</span>
+                            </li>
+                            <li> <span class="tab-reader-box1">もとぶ牧場直送<br>
+                                    低温調理したもとぶ牛の薄切りサラダ仕立て
+                                </span>
+                                <span class="tab-reader-box2">
+                                    <hr class="tab-r-line">
+                                </span>
+                                <span class="tab-reader-box3">1,980 円</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ピザ　トマトベース -->
+            <div class="pizza-yoko">
+                <div class="tomato">
+                    <div class="pizza-left">
+                        <div class="menu-title">
+                            <h1>Pizza (Rossa)</h1>
+                            <h2>―　トマトベース 一例　―</h2>
+                        </div>
+                        <div class="tomato-menu">
+                            <ul>
+                                <li>
+                                    <span class="tab-reader-box1">マリナーラ<br>
+                                    </span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">1,000 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>(トマトソース・ニンニク・オレガノ)</p>
+                                </li>
+                                <li>
+                                    <span class="tab-reader-box1">マルゲリータ+水牛モッツァレラ<br>
+                                    </span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">1,800 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>(トマトソース・水牛モッツァレラ・バジリコ・グラナパダーノ)</p>
+                                </li>
+
+                                <li>
+                                    <span class="tab-reader-box1">マルゲリータ<br>
+                                    </span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">1,300 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>(トマトソース・モッツァレラ・バジリコ・グラナパダーノ)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pizza-right">
+                        <ul>
+                            <li> <span class="tab-reader-box1">カルツォーネ<br>
+                                </span>
+                                <span class="tab-reader-box2">
+                                    <hr class="tab-r-line">
+                                </span>
+                                <span class="tab-reader-box3">1,800 円</span>
+                            </li>
+                            <li class="guzai">
+                            </li>
+                            <li> <span class="tab-reader-box1">カプリチョーザ<br>
+                                </span>
+                                <span class="tab-reader-box2">
+                                    <hr class="tab-r-line">
+                                </span>
+                                <span class="tab-reader-box3">1,700 円</span>
+                            </li>
+                            <li class="guzai">
+                                <p>(トマトソース・モッツァレラ・バジリコ・ハム・オリーブ・グラナパダーノ)</p>
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <img src="images/menu-tomato.jpg" alt="">
+            </div>
+
+
+            <!-- ピザ　モッツァレラベース -->
+            <div class="cheese">
+                <img src="images/menu-cheese.jpg" alt="">
+                <div class="tomato">
+                    <div class="pizza-left">
+                        <ul>
+                            <li> <span class="tab-reader-box1">Filetto　フィレット</span>
+                                <span class="tab-reader-box2">
+                                    <hr class="tab-r-line">
+                                </span>
+                                <span class="tab-reader-box3">1,500 円</span>
+                            </li>
+                            <li class="guzai">
+                                <p>（モッツァレラ・ミニトマト・バジリコ・グラナパダーノ）</p>
+                            </li>
+                            <li> <span class="tab-reader-box1">Salsiccia e Broccoli　サルシッチャ エ ブロッコリー</span>
+                                <span class="tab-reader-box2">
+                                    <hr class="tab-r-line">
+                                </span>
+                                <span class="tab-reader-box3">1,700 円</span>
+                            </li>
+                            <li class="guzai">
+                                <p>（モッツァレラ・自家製ソーセージ・ブロッコリー・グラナパダーノ）</p>
+                            </li>
+
+                            <li> <span class="tab-reader-box1">Prosciutto e Rucola　プロシュート エ ルッコラ</span>
+                                <span class="tab-reader-box2">
+                                    <hr class="tab-r-line">
+                                </span>
+                                <span class="tab-reader-box3">1,900 円</span>
+                            </li>
+                            <li class="guzai">
+                                <p>（モッツァレラ・生ハム・ルッコラ・グラナパダーノ）</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="pizza-right">
+                        <div class="cheese-title">
+                            <h1>Pizza (Bianca)</h1>
+                            <h2>―　モッツァレラベース 一例　―</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                <li> <span class="tab-reader-box1">4 Formaggi クアトロフォルマッジ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">1,800 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>（モッツァレラ・ゴルゴンゾーラ・リコッタ・パルミジャーノ）</p>
+                                </li>
+
+                                <li> <span class="tab-reader-box1">DOC　ドック</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">2,000 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>（水牛モッツァレラ・ミニトマト・バジリコ・グラナパダーノ）</p>
+                                </li>
+
+                                <li> <span class="tab-reader-box1">Bismark　ビスマルク</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">1,700 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>（モッツァレラ・イタリア産ハム・半熟たまご・グラナパダーノ）</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- drink -->
+            <div class="drink">
+                <div class="drink-img-yoko">
+                    <img src="images/drink-ribbon.png" alt="">
+                    <img src="images/menu-drink.jpg" alt="" class="ribbon">
+                </div>
+                <div class="drink-text">
+                    <div class="drink-title">
+                        <h1>Aperitivo</h1>
+                        <h2>―　食前酒　一例　―</h2>
+                    </div>
+                    <div class="drink-yoko">
+                        <div class="drink-left">
+                            <ul>
+                                <li> <span class="tab-reader-box1">スプリッツァ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">600 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>（白ワイン+ソーダ</p>
+                                </li>
+
+                                <li> <span class="tab-reader-box1">キールロワイヤル</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">700 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>（カシス+スパークリングワイン）</p>
+                                </li>
+
+
+                                <li> <span class="tab-reader-box1">ミモザ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">700 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>（ブラッドオレンジジュース+スパークリングワイン）</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="drink-right">
+                            <ul>
+                                <li> <span class="tab-reader-box1">キール</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">600 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>（カシス+白ワイン）</p>
+                                </li>
+
+                                <li> <span class="tab-reader-box1">カシスブラッドオレンジ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">700 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p></p>
+                                </li>
+
+                                <li> <span class="tab-reader-box1">アペロール</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">600 円</span>
+                                </li>
+                                <li class="guzai">
+                                    <p>（ロック又はソーダ）<br>
+                                        アペロールとはイタリア産のハーブ系リキュールです。
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ワイン -->
+            <div class="wine">
+                <img src="images/menu-wine.jpg" alt="">
+                <div class="wine-text">
+                    <div class="wine-title">
+                        <h1>Vinoal calice</h1>
+                        <h2>―　グラスワイン・スパークリング　―</h2>
+                    </div>
+                    <div>
+                        <ul>
+                            <li> <span class="tab-reader-box1">Spumante della casa</span>
+                                <span class="tab-reader-box2">
+                                    <hr class="tab-r-line">
+                                </span>
+                                <span class="tab-reader-box3">600 円</span>
+                            </li>
+                            <li class="guzai">
+                                <p>（スパークリングワイン）</p>
+                            </li>
+
+                            <li> <span class="tab-reader-box1">Vino della casa</span>
+                                <span class="tab-reader-box2">
+                                    <hr class="tab-r-line">
+                                </span>
+                                <span class="tab-reader-box3">500 円～
+                                </span>
+                            </li>
+                            <li class="guzai">
+                                <p>（グラスワイン 赤／白）</p>
+                            </li>
+
+                            <li> <span class="tab-reader-box1">Vino della casa</span>
+                                <span class="tab-reader-box2">
+                                    <hr class="tab-r-line">
+                                </span>
+                                <span class="tab-reader-box3">2,000 円～
+                                </span>
+                            </li>
+                            <li class="guzai">
+                                <p>（カラフェ 赤／白）</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 食前酒 -->
+            <div class="shokugo">
+                <div class="shokugo-text">
+                    <div class="shokugo-title">
+                        <h1>Digestivo</h1>
+                        <h2>― 食後酒 ―</h2>
+                    </div>
+                    <div class="shokugo-yoko">
+                        <div class="shokugo-left">
+                            <ul>
+                                <li> <span class="tab-reader-box1">レモンチェッロ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">600 円</span>
+                                </li>
+
+                                <li> <span class="tab-reader-box1">シークワサーチェッロ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">600 円</span>
+                                <li> <span class="tab-reader-box1">サンブーカ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">600 円</span>
+                            </ul>
+                        </div>
+
+                        <div class="shokugo-right">
+                            <ul>
+                                <li> <span class="tab-reader-box1">アマーロ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3">600 円</span>
+                                </li>
+
+                                <li> <span class="tab-reader-box1">グラッパ</span>
+                                    <span class="tab-reader-box2">
+                                        <hr class="tab-r-line">
+                                    </span>
+                                    <span class="tab-reader-box3"> 800 円～</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <img src="images/menu-shokugo.jpg" alt="">
+
+            </div>
+
+
+
+        </div>
+        </div>
+        <div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <div class="inner">
+            <div class="footer-yoko">
+                <img src="images/footer-tel.png" alt="">
+                <div>
+                    <address>
+                        〒 900-0015 &nbsp;&nbsp; 沖縄県那覇市久茂地3-11-21 &nbsp;1F
+                    </address>
+                    <table>
+                        <tr>
+                            <th>営業時間</th>
+                            <td>11:50 ～ 15:00（L.O.14:30）/ 18:00 ～ 23:00（L.O.22:30）<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;※ピザの生地が売り切れ次第終了になります</td>
+                        </tr>
+                        <tr>
+                            <th>定&nbsp;&nbsp;休&nbsp;&nbsp;日</th>
+                            <td>日曜日・ほか不定休有り</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="lastlink">
+                <p>
+                    <a href="/">HOME</a>
+                </p>
+                <p>
+                    <a href="menu.html">MENU</a>
+                </p>
+                <p>
+                    <a href="">GALLERY</a>
+                </p>
+                <p>
+                    <a href="">CONTACT</a>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/lightbox.js"></script>
+</body>
+
+</html>

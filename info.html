@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP INFO | PIZZERIA ONDA</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- メニュー　スライド　→slick―sliderのlinkタグは２つ入れる！！ -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- ギャラリー　ライトボックス -->
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <!-- 自分で作成したCSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome　の親データ -->
+    <script src="https://kit.fontawesome.com/179cfe141f.js" crossorigin="anonymous"></script>
+
+    <!-- JQをいれるための親データ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- ギャラリー　ライトボックス -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+        type="text/javascript"></script>
+
+    <!-- ↓　メイン画像のスライドショー -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                auto: true, // 自動でスライドショーをスタートさせる　（初期値: false）
+                mode: 'horizontal', // アニメーションの種類「横スライド→'horizontal'」「上へスライド→'vertical'」「消えていく→'fade'」　（初期値: 'horizontal'）
+                speed: 500, // アニメーションのスピード　（初期値: 500）
+                pause: 4000, // 画像の切り替わる間隔　（初期値: 4000）
+                pager: false, // 下部にある画像切り替えボタンの表示・非表示　（初期値: true）
+                controls: false // 左右の矢印の表示・非表示　（初期値: true：オン）
+            });
+        });
+    </script>
+
+
+    <!-- ↓　メニューのスライドショー　slick―slider -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+
+        $(function () {
+            // メイン画像のオプション
+            $(".slider").slick({
+                autoplay: true, // 自動再生ON
+                arrows: false, // 矢印ON true 矢印非表示 false
+                asNavFor: ".thumbnail", // サムネイルと同期
+            });
+            // サムネイルのオプション
+            $(".thumbnail").slick({
+                slidesToShow: 4, // サムネイルの表示数
+                asNavFor: ".slider", // メイン画像と同期
+                focusOnSelect: true, // サムネイルクリックを有効化
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body id="shop-info">
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="images/onda logo.svg" alt="ピザ屋のオンダ">
+            </a>
+            <ul>
+                <li class="section-hover"><a href="/">HOME</a></li>
+                <li class="section-hover"><a href="menu.html">MENU</a></li>
+                <li class="section-hover"><a href="/">GALLERY</a></li>
+                <li class="section-hover"><a href="/">NEWS</a></li>
+                <li class="section-hover"><a href="/">ACCESS</a></li>
+                <li class="section-hover"><a href="info.html">SHOP INFO</a></li>
+
+                <div class="nav-icon">
+                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="info-top">
+            <img src="images/shop-info-image.jpg" alt="">
+            <p>SHOP INFO</p>
+        </div>
+
+        <div class="access-four">
+            <div class="access-contens first">
+                <h1>Floor</h1>
+                <ul>
+                    <li> <span>座席</span>
+                        <span>22席</span>
+                    </li>
+
+                    <li> <span>個室</span>
+                        <span>無</span>
+                    </li>
+                    <li> <span>貸切</span>
+                        <span class="right">可<br>
+                            <p>(20人～50人可)</p>
+                        </span>
+                    </li>
+
+                    <li> <span>禁煙・喫煙</span>
+                        <span>全席禁煙席</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="access-contens">
+                <h1>Open</h1>
+                <ul>
+                    <li> <span>Lunch</span>
+                        <span>11:50 ～ 15:00</span>
+                    </li>
+                    <li> <span>Dinner</span>
+                        <span class="right">18:00 ～ 23:00<br>
+                            (L.O.22:30)
+                        </span>
+                    </li>
+                    <li>※ランチ、ディナー共に生地が無くなりましたら終了とさせて頂きます。</li>
+                    <li> <span>定休日</span>
+                        <span>日曜日<br>ほか不定休有り</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="access-contens">
+                <h1>Tel</h1>
+                <span class="tel">098-943-2960</span>
+            </div>
+            <div class="access-contens">
+                <div>
+                    <div class="access-top">
+                        <h1>Service</h1>
+                        <p>・TAKE OUT出来ます</p>
+                        <p>・貸し切りのご相談お受けします</p>
+                        <p>・お子様歓迎</p>
+                    </div>
+                </div>
+                <div class="access-bottom">
+                    <h1>支払い方法</h1>
+                    <p>・カード可<br>
+                        　（VISA、Master）</p>
+                    <p>・電子マネー不可</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="access-second">
+
+            <div class="access-contens">
+                <h1>Access</h1>
+                <address>
+                    &nbsp;&nbsp;〒 900-0015<br>
+                    　沖縄県s那覇市久茂地3-11-21<br>
+                    　久高ビル1F
+                </address>
+                <ul>
+                    <li>ゆいレール線県庁前駅徒歩3分<br>
+                        県庁前駅から159m</li>
+                    <li>
+                        <span>駐車場</span>
+                        <span>無</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28635.5229779212!2d127.66360353955075!3d26.214877100000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56b7b00000001%3A0x8950b46c2078098e!2z44OU44OD44OE44Kn44Oq44Ki44Kq44Oz44OA!5e0!3m2!1sja!2sjp!4v1636070326017!5m2!1sja!2sjp"
+                    width="720" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="inner">
+            <div class="footer-yoko">
+                <img src="images/footer-tel.png" alt="">
+                <div>
+                    <address>
+                        〒 900-0015 &nbsp;&nbsp; 沖縄県那覇市久茂地3-11-21 &nbsp;1F
+                    </address>
+                    <table>
+                        <tr>
+                            <th>営業時間</th>
+                            <td>11:50 ～ 15:00（L.O.14:30）/ 18:00 ～ 23:00（L.O.22:30）<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;※ピザの生地が売り切れ次第終了になります</td>
+                        </tr>
+                        <tr>
+                            <th>定&nbsp;&nbsp;休&nbsp;&nbsp;日</th>
+                            <td>日曜日・ほか不定休有り</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="lastlink">
+                <p>
+                    <a href="/">HOME</a>
+                </p>
+                <p>
+                    <a href="menu.html">MENU</a>
+                </p>
+                <p>
+                    <a href="">GALLERY</a>
+                </p>
+                <p>
+                    <a href="">CONTACT</a>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/lightbox.js"></script>
+</body>
+
+</html>
